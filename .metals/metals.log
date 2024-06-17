@@ -1560,3 +1560,12 @@ SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@36e75eab]
 SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@23d35811]
 SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@36e75eab]
+2024.06.17 13:05:45 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.06.17 13:05:45 INFO  Attempting to connect to the build server...
+2024.06.17 13:05:45 INFO  Running BSP server List(C:\Users\ASUSi5\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\ASUSi5\Desktop\FP\Practicals\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\ASUSi5\Desktop\FP\Practicals\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\ASUSi5\Desktop\FP\Practicals\.scala-build\ide-envs.json, C:\Users\ASUSi5\Desktop\FP\Practicals)
+2024.06.17 13:05:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ASUSi5\Desktop\FP\Practicals\.metals\bsp.trace.json or C:\Users\ASUSi5\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.06.17 13:05:49 INFO  time: Connected to build server in 3.43s
+2024.06.17 13:05:49 INFO  Connected to Build server: scala-cli v1.3.2
+2024.06.17 13:05:49 INFO  compiling practicals_f903962da1 (5 scala sources)
+2024.06.17 13:05:50 INFO  time: compiled Practicals_f903962da1 in 1.11s
+2024.06.17 13:05:54 INFO  time: indexed workspace in 5.5s
