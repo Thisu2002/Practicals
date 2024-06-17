@@ -1,0 +1,81 @@
+2024.06.17 12:54:28 INFO  Started: Metals version 1.3.1 in folders 'C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1' for client Visual Studio Code 1.90.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@76fb5295]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6d163ac2]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@76fb5295]
+2024.06.17 12:54:28 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.06.17 12:54:29 INFO  no build target found for C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\q4.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.17 12:54:32 INFO  Running List(C:\Users\ASUSi5\AppData\Local\Coursier\data\bin\scala-cli.BAT, setup-ide, C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1)
+2024.06.17 12:54:32 INFO  Attempting to connect to the build server...
+2024.06.17 12:54:32 INFO  Running BSP server List(C:\Users\ASUSi5\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\.scala-build\ide-envs.json, C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1)
+2024.06.17 12:54:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\.metals\bsp.trace.json or C:\Users\ASUSi5\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.06.17 12:54:32 INFO  no build target found for C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\q4.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.17 12:54:32 INFO  no build target found for C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\q5.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.17 12:54:34 INFO  time: Connected to build server in 2.69s
+2024.06.17 12:54:34 INFO  Connected to Build server: scala-cli v1.3.2
+2024.06.17 12:54:35 INFO  compiling labsession1_f903962da1 (5 scala sources)
+2024.06.17 12:54:36 INFO  time: compiled LabSession1_f903962da1 in 0.99s
+2024.06.17 12:54:38 INFO  time: indexed workspace in 3.31s
+2024.06.17 12:54:41 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\.metals\dap-server.trace.json or C:\Users\ASUSi5\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.06.17 12:54:41 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\ASUSi5\Desktop\FP\Practicals\LabSession1\.metals\dap-client.trace.json or C:\Users\ASUSi5\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.06.17 12:54:41 INFO  Starting debug proxy for [Area]
+2024.06.17 12:54:41 INFO  Loaded expression compiler in 0 milliseconds
+2024.06.17 12:54:41 INFO  Loaded step filter in 0 milliseconds
+2024.06.17 12:54:42 INFO  Loaded all sources and classes in 1 second
+2024.06.17 12:54:42 INFO  Initialized Scala 3 decoder in 429 milliseconds
+2024.06.17 12:54:42 INFO  Trying to attach to remote debuggee VM 127.0.0.1:10029 .
+2024.06.17 12:54:42 INFO  Attaching to debuggee VM succeeded.
+2024.06.17 12:54:43 INFO  Canceling debug proxy for [Area]
+2024.06.17 12:54:43 INFO  Closing debug server tcp://0.0.0.0:10027
+2024.06.17 13:00:44 INFO  compiling labsession1_f903962da1 (1 scala source)
+2024.06.17 13:00:44 INFO  time: compiled LabSession1_f903962da1 in 0.14s
+2024.06.17 13:00:46 INFO  compiling labsession1_f903962da1 (1 scala source)
+2024.06.17 13:00:46 INFO  time: compiled LabSession1_f903962da1 in 0.22s
+Jun 17, 2024 1:02:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "class:/c%3A/Users/ASUSi5/Desktop/FP/Practicals/LabSession1/q1%24package.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "class" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:741)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:738)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:673)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Jun 17, 2024 1:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 94
+2024.06.17 13:03:09 INFO  compiling labsession1_f903962da1 (1 scala source)
+2024.06.17 13:03:09 INFO  time: compiled LabSession1_f903962da1 in 0.2s
+2024.06.17 13:03:22 INFO  Shutting down server
+2024.06.17 13:03:22 INFO  shutting down Metals
+2024.06.17 13:03:22 INFO  Shut down connection with build server.
+2024.06.17 13:03:22 INFO  Exiting server

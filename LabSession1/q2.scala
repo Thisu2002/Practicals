@@ -2,8 +2,8 @@
 //ºF =ºC * 1.8000 + 32.00
 object Temperature{
     def main(args: Array[String]): Unit ={
-        var temp = 37
-        println("Temperature " + temp + "ºC = " + cTof(temp) + "ºF")
+        var temp = 35
+        println(s"Temperature " + temp + "ºC = " + cTof(temp) + "ºF")
     }
 
     def cTof(x:Double): Double={
