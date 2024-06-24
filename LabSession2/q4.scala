@@ -5,20 +5,21 @@ object Ticket{
     }
 
     def attendees(ticketPrice :Int): Int={
-        val attendeesForZero = 180;
-        var priceIncrement = ticketPrice/5;
-        var attendees = attendeesForZero - (priceIncrement * 20);
-
+        var attendees = 120 + (15 - ticketPrice)/5 * 20;
         return attendees;
     }
 
-    def profit(ticketPrice: Int): Double={
-        val perfCost = 500;
-        var numOfAttendees = attendees(ticketPrice);
-        var attendeeCost = 3 * numOfAttendees;
-        var totCost = perfCost + attendeeCost;
+    def revenue(ticketPrice: Int):Int = {
+        ticketPrice * attendees(ticketPrice);
+    }
 
-        var totIncome = numOfAttendees * ticketPrice;
-        return totIncome - totCost;
+    def cost(ticketPrice:Int):Int ={
+        val perfCost = 500;
+        var attendeeCost = 3 * attendees(ticketPrice);
+        return perfCost + attendeeCost;
+    }
+
+    def profit(ticketPrice: Int): Double={
+        revenue(ticketPrice) - cost(ticketPrice);
     }
 }
