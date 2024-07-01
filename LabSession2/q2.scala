@@ -4,7 +4,7 @@ object Activity{
         var k: Float = 4.3f;
 
         b -= 1;
-        println("b * a + c * d = " + b * a + c * d);
+        println("b * a + c * d = " + (b * a + c * d));
         d -= 1;
         println("a++ = " + a);
         a += 1;
