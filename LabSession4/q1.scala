@@ -1,14 +1,14 @@
 
 object One{
-    var names:Array[String] = Array("Soap","Rice","Cap");
-    var quantity:Array[Int] = Array(23,54,30);
+    var names:Array[String] = Array("Flour","Rice","Dhal","Sugar");
+    var quantity:Array[Int] = Array(23,54,30,34);
     def main(args:Array[String]):Unit={
         displayInventory(names, quantity);
 
         restockItem("Rice", 40);
         displayInventory(names, quantity);
         
-        sellItem("Rice", 40);
+        sellItem("Dhal", 15);
         displayInventory(names, quantity);
     }
 
