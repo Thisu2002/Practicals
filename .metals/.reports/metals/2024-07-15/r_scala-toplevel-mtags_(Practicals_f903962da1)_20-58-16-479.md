@@ -1,0 +1,68 @@
+error id: file:///C:/Users/ASUSi5/Desktop/FP/Practicals/LabSheet5/q2.scala:[1691..1694) in Input.VirtualFile("file:///C:/Users/ASUSi5/Desktop/FP/Practicals/LabSheet5/q2.scala", "import scala.io.StdIn.readLine
+case class Book(title:String, author:String, isbn:String);
+
+object LibrarySystem{
+    def main(args:Array[String]):Unit = {
+        val book1 = Book("Tom Sawyer", "Mark Twain", "1111");
+        val book2 = Book("Mansion", "Alice Grace", "2222");
+        val book3 = Book("Bowl", "Mark Tedd", "3333");
+
+        var bookSet: Set[Book] = Set(book1, book2, book3);
+        //bookSet = addBook(bookSet);
+        // bookSet = removeBook(bookSet);
+
+        // if(isBookInLibrary(bookSet))
+        //     println("Book Exists.");
+        // else
+        //     println("Book does not exist.");
+
+        //displayBooks(bookSet);
+        displayByAuthor(bookSet);
+
+    }
+
+    def addBook(bookSet: Set[Book]):Set[Book] = {
+        var title = readLine("Enter the title: ");
+        var author = readLine("Enter the author: ");
+        var isbn = readLine("Enter the isbn: ");
+
+        val newBook = Book(title, author, isbn);
+        bookSet + newBook;
+    }
+
+    def removeBook(bookSet: Set[Book]): Set[Book] = {
+        val isbnToRemove = readLine("Enter ISBN to remove: ");
+        //println("Book removed successfully.");
+        bookSet.filterNot(_.isbn == isbnToRemove);
+    }
+
+    def isBookInLibrary(bookSet: Set[Book]): Boolean = {
+        val isbnToFind = readLine("Enter ISBN to find: ");
+        bookSet.exists(_.isbn == isbnToFind);
+    }
+
+    def displayBooks(bookSet: Set[Book]):Unit = {
+        println(f"${"Title"}%-20s ${"Author"}%-20s ${"ISBN"}%-20s");
+        for(book <- bookSet){
+            println(f"${book.title}%-20s ${book.author}%-20s ${book.isbn}%-20s");
+        }
+    }
+
+    def 
+    
+    def displayByAuthor(bookSet: Set[Book]):Unit={
+        val authorToFind = readLine("Enter the author: ");
+        val booksByAuthor = bookSet.filter(book => book.author == authorToFind);
+        println(s"Books by ${authorToFind}:");
+        for(book <- booksByAuthor){
+            println(s"${book.title}");
+        }
+    }
+}")
+file:///C:/Users/ASUSi5/Desktop/FP/Practicals/LabSheet5/q2.scala
+file:///C:/Users/ASUSi5/Desktop/FP/Practicals/LabSheet5/q2.scala:53: error: expected identifier; obtained def
+    def displayByAuthor(bookSet: Set[Book]):Unit={
+    ^
+#### Short summary: 
+
+expected identifier; obtained def

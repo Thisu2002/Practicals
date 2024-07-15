@@ -1,4 +1,3 @@
-
 object One{
     var names:Array[String] = Array("Flour","Rice","Dhal","Sugar");
     var quantity:Array[Int] = Array(23,54,30,34);

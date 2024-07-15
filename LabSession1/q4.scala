@@ -1,4 +1,4 @@
-object Book{
+object BookCost{
     def main(args: Array[String]): Unit ={
         var numOfCopies = 40
         var totBookPrice: Double = 24.95 * numOfCopies * 0.60  //with discount for all copies
