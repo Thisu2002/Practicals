@@ -27,7 +27,7 @@ object CaesarCipher {
 
   def main(args: Array[String]): Unit = {
     val initialText = "Hello, World!"
-    val shift = 3
+    val shift = 4
 
     val encryptedText = cipher(initialText, shift, encrypt)
     println(s"Encrypted: $encryptedText")
